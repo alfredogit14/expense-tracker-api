@@ -1,0 +1,14 @@
+spring:
+  r2dbc:
+    url: r2dbc:h2:mem:///expensedb;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  sql:
+    init:
+      mode: always
+
+jwt:
+  secret: expense-tracker-super-secret-key-32-chars-min
+
+server:
+  port: 8080
